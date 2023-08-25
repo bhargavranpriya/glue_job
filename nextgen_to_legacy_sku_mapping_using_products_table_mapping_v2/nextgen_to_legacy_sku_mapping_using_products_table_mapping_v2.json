@@ -1,0 +1,31 @@
+{
+  "name" : "nextgen_to_legacy_sku_mapping_using_products_table_mapping_v2",
+  "description" : "",
+  "role" : "arn:aws:iam::578236606604:role/AWSGlueServiceRoleAnalytics",
+  "executionProperty" : {
+    "maxConcurrentRuns" : 2
+  },
+  "command" : {
+    "name" : "pythonshell",
+    "scriptLocation" : "s3://aws-glue-assets-578236606604-us-east-1/scripts/nextgen_to_legacy_sku_mapping_using_products_table_mapping_v2.py",
+    "pythonVersion" : "3.9"
+  },
+  "defaultArguments" : {
+    "--enable-job-insights" : "false",
+    "--job-language" : "python",
+    "--TempDir" : "s3://aws-glue-assets-578236606604-us-east-1/temporary/",
+    "--enable-glue-datacatalog" : "true"
+  },
+  "maxRetries" : 0,
+  "allocatedCapacity" : 0,
+  "timeout" : 2880,
+  "maxCapacity" : 0.0625,
+  "glueVersion" : "3.0",
+  "executionClass" : "STANDARD",
+  "sourceControlDetails" : {
+    "provider" : "GITHUB",
+    "repository" : "glue_job",
+    "branch" : "main",
+    "folder" : "nextgen_to_legacy_sku_mapping_using_products_table_mapping_v2"
+  }
+}
